@@ -1,0 +1,14 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.15.0"
+  },
+  "dependencies": {
+    "@connext/interfaces": "^2.0.5",
+    "@openzeppelin/contracts": "^4.9.1",
+    "@openzeppelin/contracts-upgradeable": "^4.9.1",
+    "@superfluid-finance/ethereum-contracts": "^1.6.0",
+    "dotenv": "^16.1.4"
+  }
+}
