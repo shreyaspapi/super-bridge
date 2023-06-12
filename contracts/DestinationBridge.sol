@@ -50,9 +50,10 @@ contract DestinationBridge is IXReceiver {
     }
 
     function addSubscribersDataList(SubscriptionData[] memory _subscribersDataList) external {
-        // Update the subscribersDataList
-        subscribersDataList = _subscribersDataList;
-
+        // append the list to the existing list
+        for (uint256 i = 0; i < _subscribersDataList.length; i++) {
+            subscribersDataList.push(_subscribersDataList[i]);
+        }
         // Recalculate the Merkle root
         require(calculateMerkleRoot() == merkleRoot, "Incorrect list");
 
